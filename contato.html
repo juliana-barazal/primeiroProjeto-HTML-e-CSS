@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Projeto Orientado | Contate-nos </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&ampdisplay=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        Projeto Orientado
+    </h1>
+
+    <nav>
+        <a href="home.html">Home</a> | <a href="juliana_barazal.html">Juliana Barazal</a> | <a href="murillo_joaquim.html">Murillo Joaquim</a> |
+        <a href="tabela_de_curiosidades.html">Tabela de curiosidades</a> | <a href="sites_favoritos.html">Sites Favoritos</a> | <strong> Contate-nos
+        </strong>
+    </nav>
+
+        <form action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
+                <label for="nome"> Nome* </label>
+                <input class="espacamento" type="text" id="nome" name="nome" size="45" required><br>
+
+                <label for="email"> E-mail* </label>
+                <input class="espacamento" type="email" id="email" name="email" size="45" required><br>
+
+                <label for="cel"> Número de celular/telefone* </label>
+                <input class="espacamento" type="tel" id="cel" name="cel" size="15"><br>
+
+                <label class="satisfacaoNota" for="nota"> Qual é o seu nível de satisfação com o nosso site? </label><br>
+                <input class="range" type="range" id="nota" list="ticks" name="satisfação" min="1" max="5" step="1" value="1" oninput="display.value=value"><br>
+                <!--
+                    oninput="" -> muda o "value" do display de acordo com o "value" da satisfação. 
+                
+                -->
+                <p>
+                    <input type="text" id="display" value="1" size="1" readonly>
+                    ⭐
+                </p>
+                <datalist id="ticks">
+                    <option value="0.0">
+                    <option value="1.0">
+                    <option value="2.0">
+                    <option value="3.0">
+                    <option value="4.0">
+                    <option value="5.0">
+                </datalist>
+
+            <p>
+                <label for="mensagem"> Mensagem </label>
+                <br>
+                <textarea id="mensagem" name="mensagem" maxlength="500" rows="8"
+                    cols="45" placeholder="Digite aqui sua mensagem"></textarea>
+            </p>
+
+            <fieldset>
+                <legend>Aceito ser contatado por </legend>
+                <input type="checkbox" id="-email" name="contatar por" value="email">
+                <label for="-email"> E-mail </label>
+
+                <input type="checkbox" id="-celular" name="contatar por" value="celular">
+                <label for="-celular"> Telefone </label>
+
+                <input type="checkbox" id="whatsapp" name="contatar por" value="whatsapp">
+                <label for="whatsapp"> Whatsapp </label>
+            </fieldset>
+
+            <p>
+                <input type="hidden" name="codigo-cliente" value="18254">
+                <button> Enviar </button>
+            </p>
+
+        </form>
+
+</body>
+
+</html>

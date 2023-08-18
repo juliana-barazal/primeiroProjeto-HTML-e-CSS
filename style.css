@@ -1,0 +1,206 @@
+/*Lista de propriedades pesquisadas 
+
+
+ATENÇÃO!! TEMOS  QUE COLOCAR E EXPLICAR AS 5 PROPRIEDADES NOVAS ASSIM:
+modelo)nome propriedade: papel na nossa css
+
+Neste css:
+1) Propriedade transition: realiza a transição entre cor de texto e da borda das imagens
+2) Propriedade display: alinha os elementos na página sites
+3) Propriedade transform: muda a forma do elemento de acordo com as instruções nele dadas
+4) Propriedade line-height: define o tamanho do espaço entre as linhas
+5) Propriedade opacity: com um valor, define-se a opacidade de um elemento*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 0%;
+    background-image:url(images/background.png);
+    color: #000;
+    line-height: 160%;
+    /*define o espaçamento entre as linhas*/
+}
+
+h1 {
+    background-color: #480488;
+    padding: 1%;
+    margin: 0px;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    color: #fff;
+    display: block;
+    line-height: 200%;
+}
+
+nav {
+    background-color: #bf7dfd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+}
+
+nav a, strong {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #480488;
+    transition: all 0.5s;
+}
+
+.Juliana,
+.Murillo {
+    padding: 4px;
+    background-color: #62007a;
+    width: fit-content;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.Murillo {
+    float: right;
+}
+.Juliana {
+    float: left;
+}
+
+.Juliana:Hover, .Murillo:Hover {
+    background-color: #bf7dfd;
+    color: #000;
+    transition: all 0.5s ease-in;
+}
+
+.JM {
+    display: inline-block;
+}
+
+.desc {
+    margin: 1% 22%;
+    text-align: center;
+}
+
+.imgborder {
+    border: 5px #62007a solid;
+    width: 300px;
+}
+
+.imgborder:hover {
+    border: 5px #bf7dfd solid;
+    transition: all 0.5s ease-in;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+
+}
+
+thead {
+    background-color: #62007a;
+    color: #fff;
+}
+
+tbody {
+    background-color: #ecedf8;
+}
+
+thead th {
+    border: solid #480488 2px;
+    padding: 10px;
+}
+
+tbody td {
+    border: solid #480488 2px;
+    padding: 5px 10px;
+}
+
+tbody td:hover {
+    background-color: #bf7dfd;
+    color: #ecedf8
+}
+
+.lista1,
+.lista2 {
+    display: -webkit-inline-flex;
+    /*display = alinha os elementos*/
+    margin: 0 25%;
+}
+
+.lista1 a,
+.lista2 a {
+    text-decoration: none;
+}
+
+.figAnimation{
+    margin: 0 30px;
+    opacity:0.5;
+}
+.figAnimation:hover{
+    transform: scale(1.2);
+    /*transform = muda a forma do elemento*/
+    transition: transform 0.5s;
+    /*transition = transição de alguma ação no elemento, neste caso, do transform, que demorará 0,5 segundos para ocorrer.*/
+    opacity:1;
+}
+
+.lista1 p, .lista2 p{
+    margin: 0px;
+}
+
+fieldset {
+    margin: 0 30%;
+    border: #480488 solid 2px;
+}
+
+label,
+fieldset {
+    color: #480488;
+}
+
+.range {
+    cursor: cell;
+}
+
+button {
+    background-color: #62007a;
+    color: #fff;
+    border: #000 1px solid;
+}
+
+button:hover {
+    background-color: #bf7dfd;
+    color: #000;
+    transition: all 0.5s
+}
+
+.alunoImg{
+    width: 300px;
+}
+
+#display{
+    border-style: none;
+    background-color: #ecedf8;
+    width: 10px;
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.range{
+    cursor: grab;
+}
+
+.imgSites{
+    width: 60px;
+}
+
+.youtube{
+    width: 82px;
+}
+
+.espacamento, .range{
+    margin: 5px;
+}
